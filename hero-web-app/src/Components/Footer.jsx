@@ -16,7 +16,7 @@ const Footer = () => {
             
             <div>
                 <h3 className="text-2xl font-bold text-white">Social</h3>
-                <div className="flex items-center justify-center gap-5">
+                <div className="flex items-center justify-center gap-5 mt-2.5">
                     <Link to='' className="text-4xl text-white"><FaLinkedin /></Link>
                     <Link to='' className="text-4xl text-white"><FaGithub /></Link>
                     <Link to='' className="text-4xl text-white"><FaInstagram /></Link>
