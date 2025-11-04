@@ -35,3 +35,9 @@ AppHub - is a modern, interactive React web application designed to showcase and
 ### 💾 Local Storage Logic (localStorage.js)
 - Custom utility functions to handle app installation and removal.
 - Prevents duplicate installations and ensures persistence.
+
+### 🧰 Tech Stack
+- React (Vite Setup)
+- React Router
+- Tailwind CSS + Daisy UI
+- Local Storage API
