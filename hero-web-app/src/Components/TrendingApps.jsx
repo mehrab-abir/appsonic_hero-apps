@@ -2,6 +2,7 @@ import React from "react";
 import useAppData from "../Hooks/useAppData";
 import SingleApp from "./SingleApp";
 import { Link } from "react-router";
+import { IoMdTrendingUp } from "react-icons/io";
 
 const TrendingApps = () => {
   const [apps, loading] = useAppData();
@@ -14,7 +15,7 @@ const TrendingApps = () => {
   return (
     <div className="bg-gray-100 py-9">
       <div className="w-[90%] mx-auto py-5">
-        <h1 className="text-4xl font-bold text-center">Trending Apps</h1>
+        <h1 className="text-4xl font-bold text-center">Trending Apps <IoMdTrendingUp className="inline text-[#632EE3]" /></h1>
         <p className="text-center mt-3 text-gray-400">
           Explore All Trending Apps on the Market developed by us
         </p>

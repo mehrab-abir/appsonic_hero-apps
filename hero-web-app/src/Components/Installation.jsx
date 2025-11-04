@@ -34,22 +34,22 @@ const Installation = () => {
     );
   }
 
-  //   console.log(installedApps);
-
   const unInstall = (id) => {
     uninstallApp(id);
 
     setInstalledApps((prev) => prev.filter((app) => app.id !== id));
 
-    toast("App Uninstalled!", {
-      position: "top-center",
-      autoClose: 5000,
+    const thisApp = installedApps.find(app => app.id === id);
+
+    toast(`${thisApp.title} Uninstalled!` , {
+      position: "top-right",
+      autoClose: 3000,
       hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
+      closeOnClick: false,
+      pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",
+      theme: "light",
       transition: Bounce,
     });
   };
@@ -72,10 +72,14 @@ const Installation = () => {
 
   const noInstalledApps = (
     <div className="h-screen flex flex-col items-center mt-20 text-center">
-      <h1 className="text-3xl font-bold text-purple-500">-No App is installed yet-</h1>
+      <h1 className="text-3xl font-bold text-purple-500">
+        -No App is installed yet-
+      </h1>
       <p className="text-gray-500">Installed Apps will appear here.</p>
     </div>
   );
+
+  const bottomSpace = <div className="h-screen"></div>;
 
   return (
     <div className="bg-gray-100 py-9">
@@ -157,18 +161,20 @@ const Installation = () => {
         ) : (
           noInstalledApps
         )}
+
+        {installedApps.length < 3 ? bottomSpace : ""}
       </div>
       <ToastContainer
-        position="top-center"
-        autoClose={5000}
+        position="top-right"
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
-        closeOnClick={true}
+        closeOnClick={false}
         rtl={false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="colored"
+        theme="light"
         transition={Bounce}
       />
     </div>

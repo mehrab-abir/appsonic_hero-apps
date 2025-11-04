@@ -11,6 +11,7 @@ import {
   Bar,
   XAxis,
   YAxis,
+  Legend,
 } from "recharts";
 import { getInstalledApps, installApp } from "../utilities/localStorage";
 import AppError from "../assets/App-Error.png";
@@ -77,7 +78,7 @@ const AppDetails = () => {
       installApp(currentApp.id);
       setIsInstalled(true);
 
-      toast.success("App Installed!", {
+      toast.success(`${currentApp.title} Installed!`, {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -126,7 +127,7 @@ const AppDetails = () => {
               <button
                 onClick={handleInstall}
                 disabled={isInstalled}
-                className={`btn bg-emerald-600 mt-12 text-white ${
+                className={`relative overflow-hidden group btn bg-emerald-600 mt-12 text-white ${
                   isInstalled
                     ? "btn-disabled opacity-70 cursor-not-allowed"
                     : ""
@@ -151,6 +152,7 @@ const AppDetails = () => {
               <XAxis type="number" />
               <YAxis type="category" dataKey="name" interval={0} />
               <Tooltip />
+              <Legend />
               <Bar dataKey="count" fill="#FF9800" />
             </BarChart>
           </ResponsiveContainer>
