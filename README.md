@@ -6,8 +6,9 @@ AppSonic - is a modern, interactive React web application designed to showcase a
 AppSonic provides an engaging user interface where users can:
 - Explore a curated list of applications.
 - View details including downloads, ratings, reviews, and descriptions.
-- Simulate installation/uninstallation with persistent data stored locally.
+- Simulate installation/uninstallation with persistent data stored in local storage.
 - Visualize ratings with interactive Recharts bar graphs.
+- Display all user-installed apps with sorting functionality by ratings.
 - Enjoy smooth loading animations and real-time toast feedback.
 
 ### Live site : https://appsonic.netlify.app/
@@ -17,29 +18,3 @@ AppSonic provides an engaging user interface where users can:
 - React Router
 - Tailwind CSS + Daisy UI
 - Local Storage API
-
-## ⚙️ Key Features
-
-### 🏠 Home Page
-- Modern, clean landing page displaying trending apps and stats.
-- Modular components for maintainability and scalability.
-
-### 🔍 App Browsing (Apps.jsx)
-- Dynamic search filtering by app title.
-- Responsive grid layout displaying app cards.
-- Built-in loading animation using react-loader-spinner.
-
-### 📱 App Details (AppDetails.jsx)
-- Detailed view showing app image, developer info, download stats, and reviews.
-- Interactive rating visualization using Recharts.
-- Toast notifications for installation confirmation.
-- Smart error handling — shows a friendly “App Not Found” screen for invalid IDs.
-
-### ⚡ Installation Management (Installation.jsx)
-- Displays all user-installed apps with sorting functionality by ratings.
-- Local storage used to persist installation state across reloads.
-- Smooth uninstall animations with toast confirmation.
-
-### 💾 Local Storage Logic (localStorage.js)
-- Custom utility functions to handle app installation and removal.
-- Prevents duplicate installations and ensures persistence.
