@@ -94,6 +94,7 @@ const AppDetails = () => {
 
   return (
     <div className="bg-gray-100 py-9">
+      <title>{currentApp.title}</title>
       <div className="w-[90%] mx-auto">
         <div className="appCard grid grid-cols-1 md:grid-cols-4 gap-6 border-b border-gray-500">
           <div className="col-span-1">
@@ -107,7 +108,7 @@ const AppDetails = () => {
             </p>
 
             <div className="py-8 border-t border-gray-500 mt-5">
-              <div className="flex items-center gap-8">
+              <div className="flex items-center gap-8 flex-wrap">
                 <div>
                   <PiDownloadSimple className="text-green-400  text-2xl font-bold" />
                   <p>Downloads</p>

@@ -83,6 +83,7 @@ const Installation = () => {
 
   return (
     <div className="bg-gray-100 py-9">
+      <title>Installed Apps</title>
       <div className="w-[90%] mx-auto">
         <h1 className="text-4xl font-bold text-center">Your Installed Apps</h1>
         <p className="text-center mt-3 text-gray-400">

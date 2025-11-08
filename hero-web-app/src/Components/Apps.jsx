@@ -37,6 +37,7 @@ const Apps = () => {
 
   return (
     <div className="bg-gray-100 py-9">
+      <title>Apps</title>
       <div className="w-[90%] mx-auto py-5">
         <h1 className="text-4xl font-bold text-center">Our All Applications</h1>
         <p className="text-center mt-3 text-gray-400">

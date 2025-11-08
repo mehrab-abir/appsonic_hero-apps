@@ -6,6 +6,7 @@ import Header from "./Header";
 const ErrorPage = () => {
   return (
     <>
+    <title>Error - 404</title>
       <div className="top-0 absolute">
         <Header></Header>
       </div>

@@ -47,7 +47,7 @@ const Header = () => {
           <Link to="/" className="flex">
             <img src={logo} alt="" className="w-12" />
             <h1 className="text-4xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-              Hero
+              AppSonic
             </h1>
           </Link>
         </div>
@@ -68,7 +68,7 @@ const Header = () => {
 
         <div className="navbar-end">
           <Link to='https://github.com/mehrab-abir' target="blank" className="btn border-none text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:shadow-lg transition-all">
-            <FaGithub className="text-xl" /> Contribute
+            <FaGithub className="text-lg md:text-xl" /> Contribute
           </Link>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Banner = () => {
           Apps
         </h1>
         <p className="mt-4 text-gray-500 w-full md:w-1/2 text-center">
-          At HERO.IO, we craft innovative apps designed to make everyday life
+          At AppSonic, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="py-12 bg-black">
         <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="text-white">
-                <h1 className="text-4xl font-bold text-white">Hero</h1>
+                <h1 className="text-4xl font-bold text-white">AppSonic</h1>
                 <p>&copy;Copyrights Reserved - 2025</p>
                 <p>Mehrab Jalil Abir</p>
             </div>

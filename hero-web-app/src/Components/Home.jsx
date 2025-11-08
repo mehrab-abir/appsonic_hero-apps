@@ -7,6 +7,7 @@ import TrendingApps from "./TrendingApps";
 const Home = () => {
   return (
     <>
+    <title>AppSonic - Home</title>
     <Banner></Banner>
     <StatesSection/>
     <TrendingApps></TrendingApps>
